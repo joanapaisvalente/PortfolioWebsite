@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSEARCH</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="background">
+    <nav class="nav-bar">
+      <div class = "nav-container">
+          <button class="menu-button" id="projects-button" data-i18n="projects">Projetos</button>
+          <button class="menu-button" id="news-button" data-i18n="news">Notícias</button>
+          <button class="menu-button" id="team-button" data-i18n="team">Equipa</button>
+      </div>
+  </nav>
+  <span class="error"></span>
+  <select class="lang">
+      <option class="opt-lang" value="pt">Português</option>
+      <option class="opt-lang"value="en">English</option>
+  </select>
+  <div class="company-name-div">
+      <span class="company-name-init">MUSEARCH</span>
+  </div>
+  <div class="log-boxes">
+      <form class="form-log" onsubmit="event.preventDefault();">
+          <span data-i18n="register" class="log-box-info">Registo</span><br />
+          <label class="firstName" for="firstName-input" data-i18n="firstName">Primeiro nome</label><br />
+          <input type="text" class="firstName" id="firstName-input" /><br />
+          <label class="lastName" for="lastName-input" data-i18n="lastName">Último nome</label><br />
+          <input type="text" class="lastName" id="lastName-input" /><br />
+          <label class="email" for="email-input" data-i18n="email">Email</label><br />
+          <input type="text" class="email" id="email-input" /><br />
+          <label class="username" for="username-input" data-i18n="username">Nome de Utilizador</label><br />
+          <input type="text" class="username" id="username-input" /><br />
+          <label class="image" for="image-input" data-i18n="image">Imagem</label><br />
+          <input type="text" class="image" id="image-input" /><br />
+          <label class="password" for="password-input" data-i18n="password">Palavra-chave</label><br />
+          <input type="password" class="password" id="password-input" /><br />
+          <label class="biography" for="biography-input" data-i18n="biography">Biografia</label><br />
+          <textarea type="textarea" class="biography" id="biography-input"></textarea><br />
+          <button
+          class="button"
+          id="register-button"
+          type="submit"
+          data-i18n="registerBtn">
+          REGISTAR
+          </button><br />
+          <span class="info-login" data-i18n="info-visitor1">Já tem conta? </span><a class="span-info-login" id="info-login" data-i18n="info-visitor3">Inicie Sessão!</a>
+      </form>
+  </div>
+  <script type="module" src="changeLang.js"></script>
+  <script type="module" src="register.js"></script>
+  </body>
+</html>

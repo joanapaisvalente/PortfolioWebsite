@@ -1,0 +1,22 @@
+{
+    "numUsers":"Número de Utilizadores",
+    "numProjects":"Número de Projetos",
+    "numNews":"Número de Notícias",
+    "keywordsNews":"Número de Keywords Únicas nas Notícias",
+    "allKeywords":"Número Total de Keywords Únicas",
+    "keywordsProjects":"Número de Keywords Únicas nos Projetos",
+    "recentNews":"Notícia mais Recente",
+    "recentProject":"Projeto mais Recente",
+    "stats":"Estatísticas",
+    "btnProjects":"Projetos",
+    "btnNews":"Notícias",
+    "btnTeam":"Equipa",
+    "btnAdmin":"Administração",
+    "btnUnapproved":"Utilizadores por aprovar",
+    "btnManageUsers":"Gerir Utilizadores",
+    "btnLogout":"Sair",
+    "editProfile":"EDITAR PERFIL",
+    "addProject":"ADICIONAR PROJETO",
+    "addNews":"ADICIONAR NOTÍCIA",
+    "recentDate":"{t, date}"
+}

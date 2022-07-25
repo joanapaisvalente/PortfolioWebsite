@@ -1,0 +1,78 @@
+.side-bar{
+    width: 20%;
+    float: left;
+    margin: 1%;
+    background-color: #A188A6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.button{
+    width: 50%;
+    margin-left: 25%;
+    border-style: none;
+    color: white;
+    background-color: #874681;
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #478978;
+    transition: all 0.4s;
+}
+
+.side-bar-profile{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.profile-picture{
+    width: 80%;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10%;
+}
+
+.user-full-name{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    float: left;
+    width: 90%;
+    margin-top: 6%;
+    margin-left: 5%;
+    word-wrap: break-word;
+}
+
+.user-biography{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#edit-profile,
+#add-project,
+#add-news {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: #F9F8F8;
+    color: #478978;
+}
+
+#edit-profile:hover,
+#add-project:hover,
+#add-news:hover {
+    background-color: #874681;
+    color: #F9F8F8;
+}

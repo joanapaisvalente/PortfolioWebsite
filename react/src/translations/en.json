@@ -1,0 +1,22 @@
+{
+    "numUsers":"Number of Users",
+    "numProjects":"Number of Projects",
+    "numNews":"Number of News",
+    "keywordsNews":"Number of Unique Keywords in Newspieces",
+    "allKeywords":"Total Number of Unique Keywords",
+    "keywordsProjects":"Number of Unique Keywords in Projects",
+    "recentNews":"Most Recent Newspiece",
+    "recentProject":"Most Recent Project",
+    "stats":"Statistics",
+    "btnProjects":"Projects",
+    "btnNews":"News",
+    "btnTeam":"Team",
+    "btnAdmin":"Administration",
+    "btnUnapproved":"Unapproved users",
+    "btnManageUsers":"Manage Users",
+    "btnLogout":"Logout",
+    "editProfile":"EDIT PROFILE",
+    "addProject":"ADD PROJECT",
+    "addNews":"ADD NEWS",
+    "recentDate":"{t, date}"
+}

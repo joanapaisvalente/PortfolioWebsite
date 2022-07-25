@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEARCH</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body class="background">
+    <nav class="nav-bar">
+        <div class = "nav-container">
+            <button class="menu-button" id="projects-button" data-i18n="projects">Projetos</button>
+            <button class="menu-button" id="news-button" data-i18n="news">Notícias</button>
+            <button class="menu-button" id="team-button" data-i18n="team">Equipa</button>
+        </div>
+    </nav>
+    <span class="error"></span>
+    <select class="lang">
+        <option class="opt-lang" value="pt">Português</option>
+        <option class="opt-lang"value="en">English</option>
+    </select>
+    <div class="company-name-div">
+        <span class="company-name-init">MUSEARCH</span>
+    </div>
+    <div class="log-boxes">
+        <form class="form-log" onsubmit="event.preventDefault();">
+            <span data-i18n="initSess" class="log-box-info">Iniciar Sessão</span><br />
+            <label class="username" for="username-input" data-i18n="username">Nome de Utilizador</label><br />
+            <input type="text" class="username" id="username-input" /><br />
+            <label class="password" for="password-input" data-i18n="password">Palavra-chave</label><br />
+            <input type="password" class="password" id="password-input" /><br />
+            <button
+            class="button"
+            id="login-button"
+            type="submit"
+            data-i18n="enter">
+            ENTRAR
+            </button><br />
+            <span class="info-login" data-i18n="info-visitor2">Ainda não possui conta? </span><a class="span-info-login" data-i18n="info-visitor4">Registe-se!</a>
+        </form>
+    </div>
+    <script type="module" src="changeLang.js"></script>
+    <script type="module"  src="login.js"></script>
+</body>
+</html>

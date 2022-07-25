@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEARCH</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="header">
+        <span class="company-name">MUSEARCH</span>
+        <select class="lang">
+            <option class="opt-lang" value="pt">Português</option>
+            <option class="opt-lang"value="en">English</option>
+        </select>
+    </div>
+    <nav class="nav-bar">
+        <div class = "nav-container">
+            <button class="menu-button" id="projects-button" data-i18n="projects">Projetos</button>
+            <button class="menu-button" id="news-button" data-i18n="news">Notícias</button>
+            <button class="menu-button" id="team-button" data-i18n="team">Equipa</button>
+            <div class="dropdown menu-button" id="navbar_administracao">
+                <button class="menu-button" id="admin-button" data-i18n="admin">Administração</button>
+                <div class="dropdown-content">
+                    <a class="dashboard">Dashboard</a>
+                    <a class="wannabeMembers" data-i18n="wannabeMembers">Utilizadores por aprovar</a>
+                    <a class="manageUsers" data-i18n="manageUsers">Gerir Utilizadores</a>
+                </div>
+            </div>
+            <button class="menu-button logout" id="logout-button" data-i18n="logout">Sair</button>
+        </div>
+    </nav>
+    <span class="error"></span>
+    <div class="side-bar" id="side-bar">
+        <div class="side-bar-info" id="side-bar-info">
+            <span class="info-visitor" data-i18n="info-visitor1">Já tem conta? </span><br><a class="span-info-visitor" id="info-login" data-i18n="info-visitor3">Inicie Sessão!</a>
+            <br />
+            <span class="info-visitor" data-i18n="info-visitor2">Ainda não possui conta? </span><br><a class="span-info-visitor" id="info-register" data-i18n="info-visitor4">Registe-se!</a>
+        </div>
+    </div>
+
+    <div class="news-info" id="news-info">
+        <img class="img-news" />
+        <h2 class="title-news"></h2>
+        <span class="news-label" data-i18n="creator">Criador da Notícia: </span>
+        <span class="owner-news"></span><br />
+        <span class="news-label" id = "label-colab" data-i18n="associates">Membros colaboradores: </span>
+        <div class="associates-news"></div>
+        <p class="descrip-news"></p>
+        <span class="news-last-update-label" data-i18n="lastUpdate">Última atualização: </span>
+        <span class="date-news"></span><br />
+        <span class="keyword-label">Keywords: </span><br />
+        <div class="keywords-news"></div>
+        <h4 class="featured-title" data-i18n="projAssociated">Projetos associados: </h4>
+        <div class="featured-projects"></div>
+    </div>
+    
+    <script type="module" src="mostUsed.js"></script>
+    <script type="module" src="seeNewsPiece.js"></script>
+    <script type="module" src="changeLang.js"></script>
+</body>
+</html>

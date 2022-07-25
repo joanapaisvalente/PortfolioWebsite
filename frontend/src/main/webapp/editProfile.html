@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEARCH</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="header">
+        <span class="company-name">MUSEARCH</span>
+        <select class="lang">
+            <option class="opt-lang" value="pt">Português</option>
+            <option class="opt-lang"value="en">English</option>
+        </select>
+    </div>
+    <nav class="nav-bar">
+        <div class = "nav-container">
+            <button class="menu-button" id="projects-button" data-i18n="projects">Projetos</button>
+            <button class="menu-button" id="news-button" data-i18n="news">Notícias</button>
+            <button class="menu-button" id="team-button" data-i18n="team">Equipa</button>
+            <div class="dropdown menu-button" id="navbar_administracao">
+                <button class="menu-button" id="admin-button" data-i18n="admin">Administração</button>
+                <div class="dropdown-content">
+                    <a class="dashboard">Dashboard</a>
+                    <a class="wannabeMembers" data-i18n="wannabeMembers">Utilizadores por aprovar</a>
+                    <a class="manageUsers" data-i18n="manageUsers">Gerir Utilizadores</a>
+                </div>
+            </div>
+            <button class="menu-button logout" id="logout-button" data-i18n="logout">Sair</button>
+        </div>
+    </nav>
+    <span class="error"></span>
+    <div class="side-bar" id="side-bar">
+        <div class="side-bar-info" id="side-bar-info">
+            <span class="info-visitor" data-i18n="info-visitor1">Já tem conta? </span><br><a class="span-info-visitor" id="info-login" data-i18n="info-visitor3">Inicie Sessão!</a>
+            <br />
+            <span class="info-visitor" data-i18n="info-visitor2">Ainda não possui conta? </span><br><a class="span-info-visitor" id="info-register" data-i18n="info-visitor4">Registe-se!</a>
+        </div>
+    </div>
+
+    <h2 class="edit-profile-title" data-i18n="edit-profile">Editar Perfil</h2>
+    <div class="edit-profile">
+        <form class="form-edit-profile" onsubmit="event.preventDefault();">
+            <div class="profile-first-name">
+                <label class="profile-firstName" for="firstName-input" data-i18n="firstName">Primeiro nome</label>
+                <input type="text" class="profile-firstName" id="profile-firstName-input" />
+            </div>
+            <div class="profile-last-name">
+                <label class="profile-lastName" for="lastName-input" data-i18n="lastName">Último nome</label>
+                <input type="text" class="profile-lastName" id="profile-lastName-input" />
+            </div>
+            <div class="profile-important-info">
+                <label class="profile-email" for="profile-email-input" data-i18n="email">Email</label>
+                <input type="text" class="profile-email" id="profile-email-input" /><br />
+                <label class="profile-username" for="profile-username-input" data-i18n="username">Nome de Utilizador</label>
+                <input type="text" class="profile-username" id="profile-username-input" readonly/><br />
+                <label class="profile-image" for="profile-image-input" data-i18n="image">Imagem</label>
+                <input type="text" class="profile-image" id="profile-image-input" /><br />
+                <label class="profile-password" for="profile-password-input" data-i18n="password">Palavra-chave</label>
+                <input type="password" class="profile-password" id="profile-password-input" /><br />
+            </div>
+            <div class="profile-bio">
+                <label class="profile-biography" for="biography-input" data-i18n="biography">Biografia</label><br />
+                <textarea type="textarea" class="profile-biography-text" id="biography-input" rows="10"></textarea><br />
+            </div>
+            <button
+            class="button"
+            id="profile-button"
+            type="submit"
+            data-i18n="saveBtn">
+            GUARDAR
+            </button>
+        </form>
+    </div>
+
+
+
+    <script type="module" src="mostUsed.js"></script>
+    <script type="module" src="editProfile.js"></script>
+    <script type="module" src="changeLang.js"></script>
+</body>
+</html>

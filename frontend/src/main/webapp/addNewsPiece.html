@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEARCH</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6c109bd4c4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="header">
+        <span class="company-name">MUSEARCH</span>
+        <select class="lang">
+            <option class="opt-lang" value="pt">Português</option>
+            <option class="opt-lang"value="en">English</option>
+        </select>
+    </div>
+    <nav class="nav-bar">
+        <div class = "nav-container">
+            <button class="menu-button" id="projects-button" data-i18n="projects">Projetos</button>
+            <button class="menu-button" id="news-button" data-i18n="news">Notícias</button>
+            <button class="menu-button" id="team-button" data-i18n="team">Equipa</button>
+            <div class="dropdown menu-button" id="navbar_administracao">
+                <button class="menu-button" id="admin-button" data-i18n="admin">Administração</button>
+                <div class="dropdown-content">
+                    <a class="dashboard">Dashboard</a>
+                    <a class="wannabeMembers" data-i18n="wannabeMembers">Utilizadores por aprovar</a>
+                    <a class="manageUsers" data-i18n="manageUsers">Gerir Utilizadores</a>
+                </div>
+            </div>
+            <button class="menu-button logout" id="logout-button" data-i18n="logout">Sair</button>
+        </div>
+    </nav>
+    <span class="error"></span>
+
+    <div class="side-bar" id="side-bar">
+        <div class="side-bar-info" id="side-bar-info">
+            <span class="info-visitor" data-i18n="info-visitor1">Já tem conta? </span><br><a class="span-info-visitor" id="info-login" data-i18n="info-visitor3">Inicie Sessão!</a>
+            <br />
+            <span class="info-visitor" data-i18n="info-visitor2">Ainda não possui conta? </span><br><a class="span-info-visitor" id="info-register" data-i18n="info-visitor4">Registe-se!</a>
+        </div>
+    </div>
+
+    <h2 class="new-news-title" data-i18n="add-news">Adicionar Nova Notícia</h2>
+    <div class="new-news">
+        <form class="form-new-news" onsubmit="event.preventDefault();">
+            <div class="form-news-title">
+                <label class="news-title-label" for="news-title-input" data-i18n="news-title">Título da notícia</label>
+                <input type="text" class="news-title-input" id="news-title-input" /><br />
+            </div><br />
+            <div class="form-news-image">
+                <label class="news-image-label" for="news-image-input" data-i18n="news-image">Imagem da notícia</label>
+                <input type="text" class="news-image-input" id="news-image-input" /><br />
+            </div><br />
+            <div class="form-news-descrip">
+                <label class="news-description-label" for="news-description-input" data-i18n="news-description">Descrição da notícia</label><br />
+                <textarea type="textarea" class="news-description-input" id="news-description-input" rows="10"></textarea>
+            </div><br />
+            
+            <div class="coauthor-div">
+                <label class="news-coauthor-label" for="news-coauthor-input" data-i18n="coauthor">Co-autores</label><br /><br />
+                <div class="coauthor-container">
+                    
+                </div>
+            </div><br />
+            <div class="coauthor-input">
+                <label class="news-coauthor-label2" for="news-coauthor-input" data-i18n="project-coauthor2">Adicionar Co-autores</label>
+                <div class="div-input-coauthor">
+                    <select class="news-coauthor-input" id="news-coauthor-input">
+                        <option id="" class="option-coauthor"></option>
+                    </select>
+                    <!--<input type="text" class="project-coauthor-input" id="project-coauthor-input" />-->
+                    <button type="button" class="add-coauthor"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+            </div><br />
+
+
+            <div class="keyword-div">
+                <label class="news-keyword-label" for="news-keyword-input" data-i18n="keyword">Keywords</label><br /><br />
+                <div class="keyword-container">
+            
+                </div>
+            </div><br />
+            <div class="keyword-input">
+                <label class="news-keyword-label2" for="news-keyword-input" data-i18n="project-keyword2">Adicionar Keywords</label>
+                <div class="div-input-keywords">
+                    <input type="text" class="news-keyword-input" id="news-keyword-input" />
+                    <button type="button" class="add-keyword"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+            </div><br />
+            <button
+            class="button"
+            id="save-news-button"
+            type="submit"
+            data-i18n="saveNewsBtn">
+            GUARDAR NOTÍCIA
+            </button>
+        </form>
+    </div>
+
+
+    <script type="module" src="mostUsed.js"></script>
+    <script type="module" src="changeLang.js"></script>
+    <script type="module" src="addNewsPiece.js"></script>
+</body>
+</html>
